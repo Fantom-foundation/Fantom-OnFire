@@ -17,13 +17,7 @@ exports[`InfoText > should match snapshot 1`] = `
     >
       30%
     </span>
-     are burnt forever. Fantom has a maximum supply of 
-    <span
-      class="number"
-    >
-      3.175 Billion
-    </span>
-    , for which the burn is slowly reducing. 
+     are burnt forever. 
   </p>
 </div>
 `;
