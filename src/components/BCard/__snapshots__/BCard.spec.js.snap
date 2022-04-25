@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`Card > should match snapshot 1`] = `
+<div
+  class="bcard"
+>
+  
+  
+</div>
+`;

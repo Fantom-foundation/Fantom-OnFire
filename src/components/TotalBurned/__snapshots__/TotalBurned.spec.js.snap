@@ -1,0 +1,38 @@
+// Vitest Snapshot v1
+
+exports[`TotalBurned > should match snapshot 1`] = `
+<div
+  class="bcard totalburned"
+>
+  
+  <h1
+    class="totalburned_title"
+  >
+    Total FTM Burned
+  </h1>
+  <p
+    class="totalburned_amount"
+    data-testid="total_burned"
+    style="background-image: url(./fire2.gif);"
+  >
+    <span
+      class="number"
+    >
+      0
+    </span>
+     
+    <span
+      class="totalburned_amount_currency"
+    >
+      FTM
+    </span>
+  </p>
+  <p
+    class="totalburned_amount_usd number"
+    data-testid="total_burned_usd"
+  >
+    $0
+  </p>
+  
+</div>
+`;
