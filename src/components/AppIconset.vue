@@ -1,8 +1,13 @@
 <script>
 import IconFire from '@/assets/vue-icons/IconFire.vue';
+import IconTwitter from '@/assets/vue-icons/social-media/IconTwitter.vue';
+import IconDiscord from '@/assets/vue-icons/social-media/IconDiscord.vue';
+import IconReddit from '@/assets/vue-icons/social-media/IconReddit.vue';
+import IconTelegram from '@/assets/vue-icons/social-media/IconTelegram.vue';
+import IconGithub from '@/assets/vue-icons/social-media/IconGithub.vue';
 
 export default {
-    components: { IconFire },
+    components: { IconFire, IconTwitter, IconDiscord, IconReddit, IconTelegram, IconGithub },
 };
 </script>
 
