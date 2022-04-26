@@ -145,7 +145,7 @@ function fromFTM(amount) {
         //background: var(--f-color-grey-1);
         //border-radius: var(--f-border-radius-2);
         transition: opacity var(--blocklist-transition-length) ease, transform var(--blocklist-transition-length) ease;
-        box-shadow: none;
+        box-shadow: 0 2px 4px 0 rgba(48, 49, 51, 0.1), 0 0 1px 0 rgba(48, 49, 51, 0.05);
 
         &-animate {
             opacity: 1;
