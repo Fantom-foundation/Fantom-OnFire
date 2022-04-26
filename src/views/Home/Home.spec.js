@@ -16,6 +16,12 @@ afterEach(() => {
 });
 
 describe('Home page', () => {
+    it('should show header', async () => {
+        wrapper = createWrapper();
+
+        expect(wrapper.findComponent({ name: 'BHeader' }).exists()).toBe(true);
+    });
+
     it('should show total fees', async () => {
         wrapper = createWrapper();
 

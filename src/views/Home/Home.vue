@@ -2,9 +2,11 @@
 import InfoText from '@/components/InfoText/InfoText.vue';
 import BlockListW from '@/components/BlockListW/BlockListW.vue';
 import TotalBurnedW from '@/components/TotalBurnedW/TotalBurnedW.vue';
+import BHeader from '@/components/BHeader/BHeader.vue';
 </script>
 
 <template>
+    <BHeader />
     <main class="home">
         <TotalBurnedW :total-burned-interval="3000" :ftm-price-interval="30000" />
         <InfoText />
