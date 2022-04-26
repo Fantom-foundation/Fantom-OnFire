@@ -17,10 +17,10 @@ import SocialMediaLinks from '@/components/SocialMediaLinks/SocialMediaLinks.vue
 .bheader {
     display: flex;
     background: var(--f-color-primary-5);
-    height: var(--f-spacer-7);
+    height: 53px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--f-spacer-2) 0 6px;
+    padding: 0 var(--f-spacer-3) 0 var(--f-spacer-3);
 
     &_logo {
         img {
