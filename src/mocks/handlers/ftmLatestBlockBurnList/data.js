@@ -55,12 +55,12 @@ export function data() {
     }
 
     return {
-        ftmLatestBlockBurnList: getFakeData(getFakeDataDefinition(36608542, '2022-04-21 7:43', true), 20),
+        ftmLatestBlockBurnList: getFakeData(getFakeDataDefinition(blockNumber, '2022-04-21 7:43', true), len),
     };
 }
 
 export function data2() {
     return {
-        ftmLatestBlockBurnList: getFakeData(getFakeDataDefinition(36608562, '2022-04-21 7:46', true)),
+        ftmLatestBlockBurnList: getFakeData(getFakeDataDefinition(blockNumber + 20, '2022-04-21 7:46', true), 5),
     };
 }
