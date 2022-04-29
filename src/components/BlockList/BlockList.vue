@@ -103,7 +103,7 @@ function fromFTM(amount) {
                             <AppIconset icon="fire" color="#ff711f" /> <span>{{ fromFTM(block.amount) }}</span>
                         </div>
                         <div class="blocklist_block_info">
-                            Block <span class="number">{{ toInt(block.blockNumber) }}</span> <br />
+                            Block {{ toInt(block.blockNumber) }} <br />
                             {{ timeAgo(toInt(block.timestamp) * 1000) }}
                         </div>
                     </BCard>
