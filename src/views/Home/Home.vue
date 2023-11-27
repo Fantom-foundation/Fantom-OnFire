@@ -3,6 +3,7 @@ import InfoText from '@/components/InfoText/InfoText.vue';
 import BlockListW from '@/components/BlockListW/BlockListW.vue';
 import TotalBurnedW from '@/components/TotalBurnedW/TotalBurnedW.vue';
 import BHeader from '@/components/BHeader/BHeader.vue';
+import SocialMediaLinks from '@/components/SocialMediaLinks/SocialMediaLinks.vue';
 </script>
 
 <template>
@@ -12,6 +13,9 @@ import BHeader from '@/components/BHeader/BHeader.vue';
         <InfoText />
         <BlockListW :interval="3000" />
     </main>
+    <footer>
+        <SocialMediaLinks />
+    </footer>
 </template>
 
 <style lang="scss">
@@ -22,15 +26,20 @@ import BHeader from '@/components/BHeader/BHeader.vue';
     display: flex;
     flex-direction: column;
     gap: var(--f-spacer-2);
+}
+
+.home,
+footer section {
     width: 100%;
     max-width: 940px;
-    margin: 0 auto;
-    padding: 0 var(--f-spacer-4) var(--f-spacer-7) var(--f-spacer-4);
+    margin: 0 auto !important;
+    padding: 0 var(--f-spacer-5);
 }
 
 @include media.media-max(breakpoints.$breakpoint-md) {
-    .home {
-        padding: var(--f-spacer-4);
+    .home,
+    footer section {
+        padding: 0 var(--f-spacer-4);
     }
 }
 </style>

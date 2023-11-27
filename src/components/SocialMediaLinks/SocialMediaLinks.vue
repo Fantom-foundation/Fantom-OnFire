@@ -1,63 +1,84 @@
 <script setup>
-import AppIconset from '@/components/AppIconset.vue';
+import LinkGroup from '@/components/LinkGroup/LinkGroup.vue';
+
+const SOCIAL_MEDIA_LINKS = [
+    {
+        url: 'https://twitter.com/FantomFDN',
+        tooltip: 'Fantom on Twitter',
+        label: 'Twitter',
+        icon: 'twitter',
+        target: '_blank',
+    },
+    {
+        url: 'http://chat.fantom.network/',
+        tooltip: 'Fantom on Discord',
+        label: 'Discord',
+        icon: 'discord',
+        target: '_blank',
+    },
+    {
+        url: 'https://t.me/Fantom_English',
+        tooltip: 'Fantom on Telegram',
+        label: 'Telegram',
+        icon: 'telegram',
+        target: '_blank',
+    },
+    {
+        url: 'https://www.reddit.com/r/FantomFoundation/',
+        tooltip: 'Fantom on Reddit',
+        label: 'Reddit',
+        icon: 'reddit',
+        target: '_blank',
+    },
+    {
+        url: 'https://github.com/Fantom-Foundation',
+        tooltip: 'Fantom on Github',
+        label: 'Github',
+        icon: 'github',
+        target: '_blank',
+    },
+];
 </script>
 
 <template>
-    <ul class="socialmedialinks">
-        <li>
-            <a href="https://twitter.com/FantomFDN" target="_blank" rel="nofollow" title="Fantom on Twitter">
-                <AppIconset icon="twitter" />
-            </a>
-        </li>
-        <li>
-            <a href="http://chat.fantom.network/" target="_blank" rel="nofollow" title="Fantom on Discord">
-                <AppIconset icon="discord" />
-            </a>
-        </li>
-        <li>
-            <a href="https://t.me/Fantom_English" target="_blank" rel="nofollow" title="Fantom on Telegram">
-                <AppIconset icon="telegram" />
-            </a>
-        </li>
-        <li>
-            <a
-                href="https://www.reddit.com/r/FantomFoundation/"
-                target="_blank"
-                rel="nofollow"
-                title="Fantom on Reddit"
-            >
-                <AppIconset icon="reddit" />
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/Fantom-Foundation" target="_blank" rel="nofollow" title="Fantom on Github">
-                <AppIconset icon="github" />
-            </a>
-        </li>
-    </ul>
+    <section class="socialmedialinks" aria-labelledby="smlinksid">
+        <h2 id="smlinksid" class="not-visible">Social media links</h2>
+        <LinkGroup :links="SOCIAL_MEDIA_LINKS" :icon-props="{ size: '32px' }" show-labels />
+    </section>
 </template>
 
 <style lang="scss">
-@use '~fantom-vue3-components/src/assets/scss/elements/links/tools';
+@use '~fantom-vue3-components/src/assets/scss/tools/media';
 
 .socialmedialinks {
-    display: flex;
-    list-style-type: none;
+    .linkgroup {
+        display: flex;
+        justify-content: space-between;
+        margin-top: var(--f-spacer-9);
+        border-top: 1px solid var(--f-color-grey-3);
+        padding: var(--f-spacer-7);
 
-    li + li {
-        padding-left: var(--f-spacer-3);
+        &_label {
+            font-size: var(--f-font-size-5);
+        }
     }
+}
 
-    .fsvgicon {
-        --fsvgicon-size: 20px;
+:root.theme-dark {
+    .socialmedialinks {
+        .linkgroup {
+            border-top: 1px solid var(--theme-dark-color-6);
+        }
     }
+}
 
-    @include tools.links() {
-        --f-link-link-color: var(--f-color-primary-4);
-        --f-link-visited-color: var(--f-color-primary-4);
-        --f-link-hover-color: var(--f-color-primary-2);
-
-        transition: color 250ms ease;
+@include media.media-max(970px) {
+    .socialmedialinks {
+        .linkgroup {
+            &_label {
+                display: none;
+            }
+        }
     }
 }
 </style>

@@ -17,7 +17,7 @@
     height: var(--f-spacer-9);
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--f-spacer-4);
+    padding: 0 var(--f-spacer-5);
     width: 100%;
     max-width: 940px;
     margin: 0 auto;
