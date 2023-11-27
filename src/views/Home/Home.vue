@@ -25,7 +25,7 @@ import BHeader from '@/components/BHeader/BHeader.vue';
     width: 100%;
     max-width: 940px;
     margin: 0 auto;
-    padding: var(--f-spacer-7) var(--f-spacer-4);
+    padding: 0 var(--f-spacer-4) var(--f-spacer-7) var(--f-spacer-4);
 }
 
 @include media.media-max(breakpoints.$breakpoint-md) {

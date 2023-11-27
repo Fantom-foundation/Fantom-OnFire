@@ -3,9 +3,8 @@ import { ref, watch } from 'vue';
 import { toInt } from '@/utils/big-number.js';
 import dayjs from '@/plugins/dayjs/dayjs.js';
 import { defer } from 'fantom-vue3-components/src/utils/index.js';
-import FDotsLoader from 'fantom-vue3-components/src/components/FDotsLoader/FDotsLoader.vue';
+import { FCard, FDotsLoader } from 'fantom-vue3-components';
 import { formatTokenValue } from '@/utils/formatters.js';
-import BCard from '@/components/BCard/BCard.vue';
 import AppIconset from '@/components/AppIconset.vue';
 
 // props
@@ -94,19 +93,19 @@ function fromFTM(amount) {
         <template v-if="dBlocks.length > 0">
             <ul>
                 <li v-for="block in dBlocks" :key="block.blockNumber">
-                    <BCard
+                    <FCard
                         class="blocklist_block"
                         :class="{ 'blocklist_block-animate': block.__animate__ }"
                         data-testcode="block"
                     >
                         <div class="blocklist_block_burned number">
-                            <AppIconset icon="fire" color="#ff711f" /> <span>{{ fromFTM(block.amount) }}</span>
+                            <AppIconset icon="fire" color="#1969ff" /> <span>{{ fromFTM(block.amount) }}</span>
                         </div>
                         <div class="blocklist_block_info">
                             Block {{ toInt(block.blockNumber) }} <br />
                             {{ timeAgo(toInt(block.timestamp) * 1000) }}
                         </div>
-                    </BCard>
+                    </FCard>
                 </li>
             </ul>
         </template>

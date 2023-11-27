@@ -1,0 +1,50 @@
+:root.theme-dark {
+    --theme-dark-color-9: #111112;
+    --theme-dark-color-8: #222223;
+    --theme-dark-color-7: #222223;
+    --theme-dark-color-7b: #2d2d2e;
+    --theme-dark-color-6: #494949;
+    --theme-dark-color-6b: #313030;
+    --theme-dark-color-5: #5c5c5c;
+    --theme-dark-color-4: #b0b0b0;
+    --theme-dark-color-3: #d4d4d4;
+    --theme-dark-color-2: #f0f0f0;
+    --theme-dark-color-1: #ffffff;
+
+    --f-color-primary-5: var(--f-color-primary-5-orig);
+    --main-hover-color: hsla(var(--f-color-grey-h), var(--f-color-grey-s), var(--f-color-grey-l), 0.2);
+    --main-hover-color2: hsla(var(--f-color-grey-h), var(--f-color-grey-s), var(--f-color-grey-l), 0.3);
+
+    .fwindow:not(.ferrormessagespopover) {
+        //--fwindow-background: var(--theme-dark-color-7b);
+        //--fwindow-body-background: var(--theme-dark-color-7b);
+        box-shadow: var(--f-box-shadow-6);
+        outline: 1px solid var(--theme-dark-color-6);
+    }
+
+    .fnotifications {
+        .fmessage {
+            background-color: var(--theme-dark-color-6b);
+            //background-color: var(--theme-dark-color-7);
+        }
+    }
+
+    .ferrormessages {
+        color: var(--f-color-red-4);
+    }
+
+    .inp {
+        --f-input-background: var(--theme-dark-color-6b);
+        --f-input-focus-background: var(--theme-dark-color-6b);
+    }
+
+    .foverlay {
+        --foverlay-background-color: rgba(80, 80, 80, 0.3);
+        //--foverlay-background-color: rgba(41, 41, 41, 0.7);
+    }
+
+    .flistbox {
+        //--flistbox-item-background-color: var(--theme-dark-color-7b);
+        --flistbox-item-hover-background-color: var(--main-hover-color);
+    }
+}

@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 import { formatNumberByLocale, formatTokenValue } from '@/utils/formatters.js';
 import { bFromWei } from '@/utils/big-number.js';
-import BCard from '@/components/BCard/BCard.vue';
+import { FCard } from 'fantom-vue3-components';
 
 // props
 const props = defineProps({
@@ -25,13 +25,13 @@ const cTotalBurnedUSD = computed(() => {
 </script>
 
 <template>
-    <BCard class="totalburned">
+    <FCard class="totalburned">
         <h1 class="totalburned_title">Total FTM Burned</h1>
         <p class="totalburned_amount" data-testid="total_burned" style="background-image: url('./fire2.gif')">
             <span class="number">{{ cTotalBurned }}</span> <span class="totalburned_amount_currency">FTM</span>
         </p>
         <p class="totalburned_amount_usd number" data-testid="total_burned_usd">{{ cTotalBurnedUSD }}</p>
-    </BCard>
+    </FCard>
 </template>
 
 <style lang="scss">
@@ -59,6 +59,7 @@ const cTotalBurnedUSD = computed(() => {
         background-position-y: 30%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        filter: invert(1);
 
         &_currency {
             display: none;

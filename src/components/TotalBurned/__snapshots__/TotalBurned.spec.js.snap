@@ -1,8 +1,8 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`TotalBurned > should match snapshot 1`] = `
 <div
-  class="bcard totalburned"
+  class="fcard totalburned"
 >
   
   <h1

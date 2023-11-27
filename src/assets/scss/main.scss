@@ -1,5 +1,7 @@
 @use "~fantom-vue3-components/src/assets/scss/settings";
+@use '~fantom-vue3-components/src/assets/scss/themes/dark';
 @use "custom-properties";
+@use "dark-theme-custom-properties";
 @use "~fantom-vue3-components/src/assets/scss/generic";
 @use "~fantom-vue3-components/src/assets/scss/elements";
 //@use "~fantom-vue3-components/src/assets/scss/utilities/align";
