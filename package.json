@@ -23,7 +23,7 @@
         "bignumber.js": "^9.0.2",
         "cross-fetch": "^3.1.5",
         "dayjs": "^1.11.1",
-        "fantom-vue3-components": "^0.4.0",
+        "fantom-vue3-components": "^0.37.7",
         "graphql": "^16.3.0",
         "graphql-tag": "^2.12.6",
         "vue": "^3.2.33"
@@ -32,7 +32,7 @@
         "@commitlint/cli": "^16.2.3",
         "@commitlint/config-conventional": "^16.2.1",
         "@rushstack/eslint-patch": "^1.1.0",
-        "@vitejs/plugin-vue": "^2.3.1",
+        "@vitejs/plugin-vue": "^4.5.0",
         "@vue/eslint-config-prettier": "^7.0.0",
         "@vue/test-utils": "^2.0.0-rc.20",
         "cross-env": "^7.0.3",
@@ -45,9 +45,9 @@
         "plop": "^3.0.5",
         "prettier": "^2.5.1",
         "sass": "^1.50.1",
-        "vite": "^2.9.5",
-        "vite-plugin-pwa": "^0.12.0",
-        "vitest": "^0.9.3"
+        "vite": "^5.0.2",
+        "vite-plugin-pwa": "^0.17.2",
+        "vitest": "^0.34.6"
     },
     "msw": {
         "workerDirectory": "public"
