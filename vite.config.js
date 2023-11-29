@@ -9,6 +9,7 @@ const plugins = [vue()];
 // PWA
 plugins.push(
     VitePWA({
+        selfDestroying: true,
         includeAssets: [
             'favicon-16x16.png',
             'favicon-32x32.png',
