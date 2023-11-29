@@ -5,25 +5,31 @@ exports[`InfoText > should match snapshot 1`] = `
   class="infotext"
 >
   <p>
-     Fantom on Fire monitors the total amount of FTM burnt, 
+     Fantom on Fire monitors the total FTM burnt. 
     <span
       class="number"
     >
       70%
     </span>
-     of the fees paid to the Opera network go to validators, 
+     of the fees paid to the network are allocated to validators; 
+    <span
+      class="number"
+    >
+      15%
+    </span>
+     supports the GasM program, 
     <span
       class="number"
     >
       10%
     </span>
-     is allocated to the Ecosystem Vault and the remaining 
+     bolsters the Ecosystem Vault, and the remaining 
     <span
       class="number"
     >
-      20%
+      5%
     </span>
-     are burnt forever. 
+     is permanently burnt. 
   </p>
 </div>
 `;

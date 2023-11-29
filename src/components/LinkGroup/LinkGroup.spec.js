@@ -1,7 +1,7 @@
 import { describe, it, afterEach, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
 import { destroyWrapper } from 'fantom-vue3-components/src/test/utils.js';
-import LinkGroup from '@/modules/common/components/LinkGroup/LinkGroup.vue';
+import LinkGroup from '@/components/LinkGroup/LinkGroup.vue';
 
 let wrapper = null;
 
