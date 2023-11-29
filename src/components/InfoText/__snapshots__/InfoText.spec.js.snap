@@ -17,13 +17,21 @@ exports[`InfoText > should match snapshot 1`] = `
     >
       15%
     </span>
-     supports the GasM program, 
+     supports the 
+    <strong>
+      GasM
+    </strong>
+     program, 
     <span
       class="number"
     >
       10%
     </span>
-     bolsters the Ecosystem Vault, and the remaining 
+     bolsters the 
+    <strong>
+      Ecosystem Vault
+    </strong>
+    , and the remaining 
     <span
       class="number"
     >

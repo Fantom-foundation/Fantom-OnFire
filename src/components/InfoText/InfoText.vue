@@ -2,8 +2,8 @@
     <div class="infotext">
         <p>
             Fantom on Fire monitors the total FTM burnt. <span class="number">70%</span> of the fees paid to the network
-            are allocated to validators; <span class="number">15%</span> supports the GasM program,
-            <span class="number">10%</span> bolsters the Ecosystem Vault, and the remaining
+            are allocated to validators; <span class="number">15%</span> supports the <strong>GasM</strong> program,
+            <span class="number">10%</span> bolsters the <strong>Ecosystem Vault</strong>, and the remaining
             <span class="number">5%</span> is permanently burnt.
         </p>
     </div>
