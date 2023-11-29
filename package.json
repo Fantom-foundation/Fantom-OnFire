@@ -4,9 +4,9 @@
     "scripts": {
         "dev": "vite",
         "dev:mocked": "cross-env VITE_MOCK_LOCAL_SERVER=1 vite",
-        "build": "export NODE_OPTIONS=--openssl-legacy-provider && vite build",
+        "build": "vite build",
         "build:mocked": "cross-env VITE_MOCK_LOCAL_SERVER=1 vite build",
-        "preview": "export NODE_OPTIONS=--openssl-legacy-provider && vite preview --port 5050",
+        "preview": "vite preview --port 5050",
         "test:unit": "vitest --environment jsdom",
         "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
         "test": "vitest run --environment jsdom",
