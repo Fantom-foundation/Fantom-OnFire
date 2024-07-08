@@ -9,6 +9,7 @@ const SOCIAL_MEDIA_LINKS = [
         icon: 'twitter',
         target: '_blank',
     },
+    /*
     {
         url: 'http://chat.fantom.network/',
         tooltip: 'Fantom on Discord',
@@ -16,6 +17,7 @@ const SOCIAL_MEDIA_LINKS = [
         icon: 'discord',
         target: '_blank',
     },
+*/
     {
         url: 'https://t.me/Fantom_English',
         tooltip: 'Fantom on Telegram',
